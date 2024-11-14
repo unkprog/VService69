@@ -1,8 +1,12 @@
-﻿:root {
+﻿@import url('fonts/rimma/rimma-sans-bold.css');
+
+:root {
     --clr-primary-black: rgba(12, 12, 12, 1);
     --clr-primary-white: rgba(241, 247, 255, 1);
     --clr-primary-orange: rgba(217, 166, 26, 1);
 }
+
+
 
 body {
     background-color: var(--clr-primary-black);
@@ -16,6 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'RimmaSansBold';
 }
 
     .header-logo > img.logo {
