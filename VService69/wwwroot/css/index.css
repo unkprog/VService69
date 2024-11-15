@@ -1,58 +1,91 @@
-﻿@import url('fonts/rimma/rimma-sans-bold.css');
-
-:root {
+﻿:root {
     --clr-primary-black: rgba(12, 12, 12, 1);
     --clr-primary-white: rgba(241, 247, 255, 1);
     --clr-primary-orange: rgba(217, 166, 26, 1);
 }
 
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/inter/intervariable.ttf') format('truetype'), url('/fonts/inter/intervariable.woff2') format('woff2');
+}
 
+@font-face {
+    font-family: 'Rimma';
+    src: url('/fonts/rimma/rimma-sans-bold.ttf') format('truetype'), url('/fonts/rimma/rimma-sans-bold.woff2') format('woff2');
+}
 
 body {
     background-color: var(--clr-primary-black);
     color: var(--clr-primary-white);
-    font-family: 'Rimma_sans';
+    font-family: 'Inter';
     font-style: normal;
 }
 
 
-.header-logo {
+.container-logo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'RimmaSansBold';
 }
 
-    .header-logo > img.logo {
-        width: 100%;
-        margin: 0 200px;
-        max-width: 1520px;
+.container-logo-slogan {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.65vw;
+    line-height: 1.66vw;
+    width: 42%;
+    max-width: 805px;
+    padding-right: 6vw;
+}
+
+    .container-logo-slogan :first-child {
+        margin-left: 9vw;
     }
 
-    .header-logo > img.slogan {
-        width: 714px;
+.container-logo-name {
+    font-family: Rimma;
+    font-size: 10vw;
+    line-height: 10vw; /*5.5vw;*/
+    color: rgba(217, 166, 26, 1);
+}
+
+@media screen and (min-width: 1920px) {
+    .container-logo-slogan {
+        font-size: 32px;
+        line-height: 34px;
+        padding-right: 115px;
     }
 
-@media screen and (min-width: 1025px) and (max-width: 1400px) {
-    .header-logo > img.logo {
-        margin: 0 20px;
+        .container-logo-slogan :first-child {
+            margin-left: 173px;
+        }
+
+    .container-logo-name {
+        font-size: 192px;
+        line-height: 192px; /*110px;*/
+    }
+}
+
+/*@media screen and (min-width: 1025px) and (min-width: 1400px) {
+    .container-logo-name {
+        font-size: 158px;
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    .header-logo > img.logo {
-        margin: 0 20px;
+    .container-logo-name {
+        font-size: 118px;
     }
 }
 
 @media screen and (min-width: 391px) and (max-width: 768px) {
-    .header-logo > img.logo {
-        margin: 0 20px;
+    .container-logo-name {
+        font-size: 87px;
     }
 }
 
 @media screen and (max-width: 390px) {
-    .header-logo > img.logo {
-        margin: 0 15px;
+    .container-logo-name {
+        font-size: 43px;
     }
-}
+}*/
