@@ -27,9 +27,10 @@ body {
     max-width: 1600px;
 }
 
-.container-header, container-header-logo {
+.container-row {
     display: flex;
     justify-content: space-between;
+    width: 100%
 }
 
 .container-header-logo-name, .container-header-phone {
@@ -64,14 +65,46 @@ body {
 }
 
     .container-logo-slogan :first-child {
-        margin-left: 9vw;
+        margin-left: 7vw;
     }
 
 .container-logo-name {
     font-family: Rimma;
     font-size: 10vw;
     line-height: 10vw; /*5.5vw;*/
-    color: rgba(217, 166, 26, 1);
+    color: var(--clr-primary-orange);
+}
+
+.container-header-logo-item {
+    height: 2.3vw;
+    font-size: 1.875vw;
+    color: var(--clr-primary-black);
+    background-color: var(--clr-primary-orange);
+    display: flex;
+    /*gap: 0.5vw;*/
+}
+
+    .container-header-logo-item > img {
+        margin: 0.25vw;
+    }
+
+    .container-header-logo-item > span {
+        margin: 0 0.5vw;
+    }
+
+.container-header-logo-item2 {
+    height: 2.3vw;
+    font-size: 1.875vw;
+    display: flex;
+}
+
+    .container-header-logo-item2 > img {
+        margin: 0.25vw;
+        filter: invert(65%) sepia(97%) saturate(421%) hue-rotate(358deg) brightness(90%) contrast(89%);
+    }
+
+.container-row-logo-margin {
+    margin-bottom: -1.7vw;
 }
 
 @media screen and (min-width: 1920px) {
@@ -82,15 +115,23 @@ body {
     }
 
         .container-logo-slogan :first-child {
-            margin-left: 173px;
+            margin-left: 6vw;
         }
 
     .container-logo-name {
         font-size: 192px;
         line-height: 192px; /*110px;*/
     }
-}
 
+    .container-header-logo-item, .container-header-logo-item2 {
+        height: 44px;
+        font-size: 36px;
+    }
+
+    .container-row-logo-margin {
+        margin-bottom: -33px;
+    }
+}
 /*@media screen and (min-width: 1025px) and (min-width: 1400px) {
     .container-logo-name {
         font-size: 158px;
