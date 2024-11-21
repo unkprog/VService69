@@ -10,4 +10,11 @@
     <None Include="wwwroot\index.html" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="wwwroot\img\shape.svg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

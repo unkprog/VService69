@@ -30,7 +30,13 @@ body {
 .container-row {
     display: flex;
     justify-content: space-between;
-    width: 100%
+    width: 100%;
+}
+
+.container-row-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container-header-logo-name, .container-header-phone {
@@ -107,6 +113,13 @@ body {
     margin-bottom: -1.7vw;
 }
 
+.container-shape {
+    margin-top: -6vw;
+    width: 67%;
+    max-width: 1072px;
+}
+
+
 @media screen and (min-width: 1920px) {
     .container-logo-slogan {
         font-size: 32px;
@@ -131,6 +144,10 @@ body {
     .container-row-logo-margin {
         margin-bottom: -33px;
     }
+
+   /* .container-shape {
+        margin-top: -116px;
+    }*/
 }
 /*@media screen and (min-width: 1025px) and (min-width: 1400px) {
     .container-logo-name {
