@@ -1,22 +1,22 @@
 ﻿<svg width="1085" height="758" viewBox="0 0 1085 758" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-	<path d="M1025 174.5C1025 306.976 972.374 434.025 878.7 527.7C785.025 621.374 657.976 674 525.5 674C393.024 674 265.975 621.374 172.3 527.7C78.6258 434.025 26 306.976 26 174.5L266.019 174.5C266.019 243.319 293.358 309.318 342.02 357.98C390.682 406.643 456.681 433.981 525.5 433.981C594.319 433.981 660.318 406.643 708.98 357.98C757.643 309.318 784.981 243.319 784.981 174.5H1025Z" fill="#D9A61A"/>
-	<rect x="169" y="597.193" width="618.26" height="618.26" transform="rotate(-75 169 597.193)" fill="url(#pattern0_527_1853)"/>
-	<rect x="977" y="353" width="68" height="29" fill="#101010"/>
-	<rect x="1004" y="324" width="81" height="29" fill="#101010"/>
-	<rect x="870" y="382" width="175" height="30" fill="#101010"/>
-	<rect x="904" y="411" width="100" height="29" fill="#101010"/>
-	<rect x="975" y="379" width="45" height="25" fill="#D9A61A"/>
-	<rect x="870" y="436" width="112" height="30" fill="#101010"/>
-	<rect x="910" y="465" width="94" height="29" fill="#101010"/>
-	<rect x="943" y="451" width="39" height="25" fill="#D9A61A"/>
-	<rect width="68" height="30" transform="matrix(-1 0 0 1 108 353)" fill="#101010"/>
-	<rect width="81" height="30" transform="matrix(-1 0 0 1 81 324)" fill="#101010"/>
-	<rect width="175" height="30" transform="matrix(-1 0 0 1 215 382)" fill="#101010"/>
-	<rect width="100" height="29" transform="matrix(-1 0 0 1 181 411)" fill="#101010"/>
-	<rect width="119" height="25" transform="matrix(-1 0 0 1 191 427)" fill="#D9A61A"/>
-	<rect width="112" height="14" transform="matrix(-1 0 0 1 215 452)" fill="#101010"/>
-	<rect width="94" height="29" transform="matrix(-1 0 0 1 175 465)" fill="#101010"/>
-	<rect width="39" height="25" transform="matrix(-1 0 0 1 142 451)" fill="#D9A61A"/>
+	<path d="M1025 67.5C1025 199.976 972.374 327.025 878.7 420.7C785.025 514.374 657.976 567 525.5 567C393.024 567 265.975 514.374 172.3 420.7C78.6258 327.025 26 199.976 26 67.5L266.019 67.5C266.019 136.319 293.358 202.318 342.02 250.98C390.682 299.643 456.681 326.981 525.5 326.981C594.319 326.981 660.318 299.643 708.98 250.98C757.643 202.318 784.981 136.319 784.981 67.5H918Z" fill="#D9A61A"/>
+	<rect x="169" y="490" width="618" height="618" transform="rotate(-75 169 490)" fill="url(#pattern0_527_1853)"/>
+	<rect x="977" y="256" width="68" height="29" fill="#101010"/>
+	<rect x="1004" y="217" width="81" height="29" fill="#101010"/>
+	<rect x="870" y="275" width="175" height="30" fill="#101010"/>
+	<rect x="904" y="304" width="100" height="29" fill="#101010"/>
+	<rect x="975" y="272" width="45" height="25" fill="#D9A61A"/>
+	<rect x="870" y="329" width="112" height="30" fill="#101010"/>
+	<rect x="910" y="358" width="94" height="29" fill="#101010"/>
+	<rect x="943" y="344" width="39" height="25" fill="#D9A61A"/>
+	<rect width="68" height="30" transform="matrix(-1 0 0 1 108 246)" fill="#101010"/>
+	<rect width="81" height="30" transform="matrix(-1 0 0 1 81 217)" fill="#101010"/>
+	<rect width="175" height="30" transform="matrix(-1 0 0 1 215 275)" fill="#101010"/>
+	<rect width="100" height="29" transform="matrix(-1 0 0 1 181 304)" fill="#101010"/>
+	<rect width="119" height="25" transform="matrix(-1 0 0 1 191 320)" fill="#D9A61A"/>
+	<rect width="112" height="14" transform="matrix(-1 0 0 1 215 345)" fill="#101010"/>
+	<rect width="94" height="29" transform="matrix(-1 0 0 1 175 358)" fill="#101010"/>
+	<rect width="39" height="25" transform="matrix(-1 0 0 1 142 344)" fill="#D9A61A"/>
 	<defs>
 		<pattern id="pattern0_527_1853" patternContentUnits="objectBoundingBox" width="1" height="1">
 			<use xlink:href="#image0_527_1853" transform="scale(0.000462963)"/>
