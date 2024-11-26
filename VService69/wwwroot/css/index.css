@@ -128,6 +128,33 @@ body {
     max-width: 1072px;
 }
 
+.container-why-choose-us {
+    margin: 0 auto;
+    font-family: 'Rimma';
+    font-weight: 700;
+    font-size: 2.60417vw;
+    line-height: 2.60417vw;
+}
+
+.container-why-choose-us-cards {
+    display: flex;
+    width: 100%;
+    height: 33.3346vw;
+    max-height: 640px;
+   
+}
+
+    .container-why-choose-us-cards > .card {
+        width: 16.6673vw;
+        height: 16.6673vw;
+        background-color: rgba(233, 240, 248, 0.1);
+        max-height: 320px;
+        font-family: 'Rimma';
+        font-weight: 700;
+        font-size: 0.8vw;
+        line-height: 0.9vw;
+        padding: 0.8vw;
+    }
 
 @media screen and (min-width: 1920px) {
     .container-logo-slogan {
@@ -153,6 +180,15 @@ body {
    /* .container-shape {
         margin-top: -116px;
     }*/
+
+
+    .container-why-choose-us {
+        font-size: 50px;
+        line-height: 50px;
+    }
+       /* .container-why-choose-us-cards > .card {
+            height: 320px;
+        }*/
 }
 /*@media screen and (min-width: 1025px) and (min-width: 1400px) {
     .container-logo-name {
