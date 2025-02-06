@@ -165,8 +165,30 @@ body {
             color: rgba(233, 240, 248, 0.3);
         }
 
-@media screen and (min-width: 1920px) {
-    .container-logo-slogan {
+.container-icons {
+    display: flex;
+    width: 100%;
+    gap: 6vh;
+    justify-content: center;
+}
+
+    .container-icons > .container-icon {
+        border-radius: 50%;
+        background-color: rgba(233, 240, 248, 0.1);
+        width: 5vw;
+        height: 5vw;
+        display: flex;
+        align-items: center;
+    }
+
+        .container-icons > .container-icon > img {
+            width: 75%;
+            height: 75%;
+            margin: 0 auto;
+        }
+
+    @media screen and (min-width: 1920px) {
+        .container-logo-slogan {
         font-size: 32px;
         line-height: 34px;
         padding-right: 115px;
