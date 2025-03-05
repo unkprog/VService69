@@ -128,7 +128,7 @@ body {
     max-width: 1072px;
 }
 
-.container-why-choose-us {
+.container-title {
     margin: 0 auto;
     font-family: 'Rimma';
     font-weight: 700;
@@ -141,7 +141,6 @@ body {
     width: 100%;
     height: 33.3346vw;
     max-height: 640px;
-   
 }
 
     .container-why-choose-us-cards > .card {
@@ -168,26 +167,59 @@ body {
 .container-icons {
     display: flex;
     width: 100%;
-    gap: 6vh;
     justify-content: center;
 }
 
     .container-icons > .container-icon {
-        border-radius: 50%;
-        background-color: rgba(233, 240, 248, 0.1);
-        width: 5vw;
-        height: 5vw;
         display: flex;
+        flex-direction: column;
+        width: 15.077vw;
         align-items: center;
+        padding: 3.2vw 0.8vw;
     }
 
-        .container-icons > .container-icon > img {
-            width: 75%;
-            height: 75%;
-            margin: 0 auto;
+        .container-icons > .container-icon > .icon {
+            border-radius: 50%;
+            background-color: rgba(233, 240, 248, 0.1);
+            width: 9vw;
+            height: 9vw;
+            display: flex;
+            align-items: center;
         }
 
-    @media screen and (min-width: 1920px) {
+            .container-icons > .container-icon > .icon > img {
+                width: 75%;
+                height: 75%;
+                margin: 0 auto;
+            }
+
+        .container-icons > .container-icon > .icon-num {
+            font-size: 2.25vw;
+            margin-top: 2vw;
+            font-family: 'Rimma';
+            font-weight: 700;
+            color: rgba(233, 240, 248, 0.3);
+        }
+
+
+.container-services {
+
+}
+
+.container-services-row {
+    display: flex;
+    gap: 2vw;
+    border-bottom: 1px solid rgba(233, 240, 248, 0.3);
+}
+
+    .container-services-row > span {
+        font-family: 'Inter';
+        font-weight: 600;
+        font-size: 2vw;
+        line-height: 2vw;
+    }
+
+@media screen and (min-width: 1920px) {
         .container-logo-slogan {
         font-size: 32px;
         line-height: 34px;
@@ -213,7 +245,7 @@ body {
     }*/
 
 
-    .container-why-choose-us {
+    .container-title {
         font-size: 50px;
         line-height: 50px;
     }
@@ -225,6 +257,13 @@ body {
         line-height: 20px;
         padding: 15px;
     }
+
+        .container-icons > .container-icon {
+            width: 290px;
+            padding: 60px 15px;
+        }
+
+
 }
 /*@media screen and (min-width: 1025px) and (min-width: 1400px) {
     .container-logo-name {
