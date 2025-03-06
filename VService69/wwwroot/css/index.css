@@ -203,14 +203,20 @@ body {
 
 
 .container-services {
-
+    width: 100%;
 }
 
 .container-services-row {
     display: flex;
-    gap: 2vw;
+    gap: 1vw;
+    padding: 1vw 0;
     border-bottom: 1px solid rgba(233, 240, 248, 0.3);
+    width: 75.385vw;
+    margin: 0 auto;
 }
+    .container-services-row:first-child {
+        border-top: 1px solid rgba(233, 240, 248, 0.3);
+    }
 
     .container-services-row > span {
         font-family: 'Inter';
@@ -219,8 +225,26 @@ body {
         line-height: 2vw;
     }
 
+        .container-services-row > span.number {
+            width: 4vw;
+            text-align: center;
+            color: rgba(233, 240, 248, 0.3);
+        }
+
+        .container-services-row > span.name {
+            width: 80%;
+            color: rgba(241, 247, 255, 1);
+        }
+
+        .container-services-row > span.price {
+            width: 15vw;
+            text-align: right;
+            font-size: 1.5vw;
+            color: rgba(241, 247, 255, 1);
+            margin-right: 1.5vw;
+        }
 @media screen and (min-width: 1920px) {
-        .container-logo-slogan {
+    .container-logo-slogan {
         font-size: 32px;
         line-height: 34px;
         padding-right: 115px;
@@ -240,7 +264,7 @@ body {
         margin-bottom: -33px;
     }
 
-   /* .container-shape {
+    /* .container-shape {
         margin-top: -116px;
     }*/
 
@@ -258,12 +282,13 @@ body {
         padding: 15px;
     }
 
-        .container-icons > .container-icon {
-            width: 290px;
-            padding: 60px 15px;
-        }
+    .container-icons > .container-icon {
+        width: 290px;
+        padding: 60px 15px;
+    }
 
-
+    .container-services-row {
+    }
 }
 /*@media screen and (min-width: 1025px) and (min-width: 1400px) {
     .container-logo-name {
