@@ -136,6 +136,17 @@ body {
     line-height: 2.60417vw;
 }
 
+.container-title-shape {
+    position: absolute;
+    width: 100%;
+    bottom: 8vw;
+    font-family: 'Rimma';
+    font-weight: 700;
+    font-size: 3vw;
+    line-height: 3vw;
+    text-align: center;
+}
+
 .container-why-choose-us-cards {
     display: flex;
     width: 100%;
@@ -243,6 +254,24 @@ body {
             color: rgba(241, 247, 255, 1);
             margin-right: 1.5vw;
         }
+
+
+.button-contact-us {
+    margin: 0 auto;
+    border: 1px solid rgba(217, 166, 26, 1);
+    border-radius: 0.5vw;
+    padding: 1vw 2vw;
+}
+
+.yandex-reviews {
+    overflow: hidden;
+    position: relative;
+    margin: 4vw auto;
+    width: 64vw;
+    max-width: 760px;
+    height: 800px;
+}
+
 @media screen and (min-width: 1920px) {
     .container-logo-slogan {
         font-size: 32px;
