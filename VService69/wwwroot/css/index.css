@@ -131,7 +131,7 @@ body {
 .container-title {
     margin: 0 auto;
     font-family: 'Rimma';
-    font-weight: 700;
+    font-weight: 500;
     font-size: 2.60417vw;
     line-height: 2.60417vw;
 }
@@ -141,7 +141,7 @@ body {
     width: 100%;
     bottom: 8vw;
     font-family: 'Rimma';
-    font-weight: 700;
+    font-weight: 500;
     font-size: 3vw;
     line-height: 3vw;
     text-align: center;
@@ -163,7 +163,7 @@ body {
         background-color: rgba(233, 240, 248, 0.1);
         max-height: 320px;
         font-family: 'Rimma';
-        font-weight: 700;
+        font-weight: 500;
         font-size: 1vw;
         line-height: 1vw;
         padding: 0.8vw;
@@ -208,7 +208,7 @@ body {
             font-size: 2.25vw;
             margin-top: 2vw;
             font-family: 'Rimma';
-            font-weight: 700;
+            font-weight: 500;
             color: rgba(233, 240, 248, 0.3);
         }
 
