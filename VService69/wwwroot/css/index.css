@@ -266,11 +266,68 @@ body {
 .yandex-reviews {
     overflow: hidden;
     position: relative;
-    margin: 4vw auto;
+    margin: 1vw auto;
     width: 64vw;
     max-width: 760px;
     height: 800px;
 }
+
+.container-about-cards {
+    display: flex;
+    width: 100%;
+    height: 10vw;
+    max-height: 180px;
+    margin: 3vw auto 0 auto;
+}
+
+    .container-about-cards > .card {
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+        /*justify-content: space-between;*/
+        width: 90%;
+        /*height: 15.077vw;*/
+        background-color: rgba(233, 240, 248, 0.1);
+        /*max-height: 320px;*/
+        font-family: 'Rimma';
+        font-weight: 500;
+        font-size: 1vw;
+        line-height: 1vw;
+        padding: 0.8vw;
+        border: 1px solid #E9F0F81A;
+        border-right: none;
+    }
+
+        .container-about-cards > .card > span.secondary {
+            font-family: 'Inter';
+            font-weight: 600;
+            color: rgba(233, 240, 248, 0.3);
+        }
+
+.container-contacts-cards {
+    display: flex;
+    width: 100%;
+    /*height: 10vw;
+    max-height: 180px;*/
+    margin: 3vw auto 0 auto;
+}
+
+    .container-contacts-cards > .card {
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+        width: 90%;
+        font-family: 'Rimma';
+        font-weight: 500;
+        font-size: 1vw;
+        line-height: 1.35vw;
+        padding: 0.8vw;
+    }
+
+        .container-contacts-cards > .card > span.secondary {
+            font-family: 'Inter';
+            font-weight: 600;
+        }
 
 @media screen and (min-width: 1920px) {
     .container-logo-slogan {
