@@ -44,6 +44,12 @@ body {
     line-height: 24px;
 }
 
+.container-header-phone > span {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
 .container-header-menu {
     display: flex;
     gap: 2.6054vw;
