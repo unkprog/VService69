@@ -43,6 +43,9 @@ body {
     font-size: 20px;
     line-height: 24px;
 }
+.container-header-logo-name {
+    margin:0;
+}
 
 .container-header-phone > span {
     font-size: 16px;
@@ -94,6 +97,8 @@ body {
     font-size: 10vw;
     line-height: 10vw; /*5.5vw;*/
     color: var(--clr-primary-orange);
+    font-weight:400;
+    margin: 0;
 }
 
 .container-header-logo-item {
@@ -175,6 +180,10 @@ body {
         padding: 0.8vw;
     }
 
+        .container-why-choose-us-cards > .card > h4.primary {
+            margin: 0;
+            font-weight: 400;
+        }
         .container-why-choose-us-cards > .card > span.secondary {
             font-family: 'Inter';
             font-weight: 600;
@@ -235,7 +244,7 @@ body {
         border-top: 1px solid rgba(233, 240, 248, 0.3);
     }
 
-    .container-services-row > span {
+    .container-services-row > span, .container-services-row > h3 {
         font-family: 'Inter';
         font-weight: 600;
         font-size: 2vw;
@@ -248,9 +257,10 @@ body {
             color: rgba(233, 240, 248, 0.3);
         }
 
-        .container-services-row > span.name {
+        .container-services-row > h3.name {
             width: 80%;
             color: rgba(241, 247, 255, 1);
+            margin: 0;
         }
 
         .container-services-row > span.price {
@@ -303,12 +313,23 @@ body {
         border: 1px solid #E9F0F81A;
         border-right: none;
     }
+        .container-about-cards > .card > h4.primary {
+            margin: 0;
+            font-weight: 400;
+        }
 
         .container-about-cards > .card > span.secondary {
             font-family: 'Inter';
             font-weight: 600;
             color: rgba(233, 240, 248, 0.3);
         }
+
+.about-item {
+    font-weight: 400;
+    font-size: 1vw;
+    line-height: 1.5vw;
+    margin: 0;
+}
 
 .container-contacts-cards {
     display: flex;

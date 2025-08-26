@@ -7,7 +7,7 @@ $(document).ready(function () {
             const service = services[i];
             htmlServices += `<div class="container-services-row">
                                  <span class="number">${i > 8 ? i + 1 : '0' + (i + 1)}</span>
-                                 <span class="name">${service.service}</span>
+                                 <h3 class="name">${service.service}</h3>
                                  <span class="price">${service.price}</span>
                              </div>`
         }
