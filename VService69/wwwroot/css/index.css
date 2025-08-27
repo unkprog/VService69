@@ -6,12 +6,12 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('/fonts/inter/intervariable.ttf') format('truetype'), url('/fonts/inter/intervariable.woff2') format('woff2');
+    src: url('/fonts/intervariable.ttf') format('truetype'), url('/fonts/intervariable.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Rimma';
-    src: url('/fonts/rimma/rimma-sans-bold.ttf') format('truetype'), url('/fonts/rimma/rimma-sans-bold.woff2') format('woff2');
+    src: url('/fonts/rimma-sans-bold.ttf') format('truetype'), url('/fonts/rimma-sans-bold.woff2') format('woff2');
 }
 
 body {
@@ -239,6 +239,7 @@ body {
     border-bottom: 1px solid rgba(233, 240, 248, 0.3);
     width: 75.385vw;
     margin: 0 auto;
+    max-width: 100%;
 }
     .container-services-row:first-child {
         border-top: 1px solid rgba(233, 240, 248, 0.3);
