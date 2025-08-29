@@ -14,12 +14,147 @@
     src: url('/fonts/rimma-sans-bold.ttf') format('truetype'), url('/fonts/rimma-sans-bold.woff2') format('woff2');
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: var(--clr-primary-black);
     color: var(--clr-primary-white);
     font-family: 'Inter';
     font-style: normal;
 }
+
+nav {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    background: var(--clr-primary-black);
+}
+    nav input {
+        display: none;
+    }
+
+
+    nav .wrapper {
+        position: relative;
+        max-width: 1600px;
+        padding: 0px 20px;
+        height: 50px;
+        line-height: 50px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+.wrapper .btn {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+    .wrapper .btn.close-btn {
+        position: absolute;
+        right: 30px;
+        top: 10px;
+    }
+
+.wrapper .logo a {
+    color: var(--clr-primary-white);
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 100%;
+}
+
+.wrapper .nav-links {
+    display: inline-flex;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+    .nav-links li a {
+        color: var(--clr-primary-white);
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 9px 15px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+
+        .nav-links li a:hover {
+            background: #3A3B3C;
+        }
+
+.nav-links .mobile-item {
+    display: none;
+}
+
+
+.wrapper .btn {
+    color: var(--clr-primary-white);
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+    .wrapper .btn.close-btn {
+        position: absolute;
+        right: 30px;
+        top: 10px;
+    }
+
+@media screen and (max-width: 970px) {
+    .wrapper .btn {
+        display: block;
+    }
+
+    .wrapper .nav-links {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        max-width: 350px;
+        top: 0;
+        left: -100%;
+        background: #242526;
+        display: block;
+        padding: 50px 10px;
+        line-height: 50px;
+        overflow-y: auto;
+        box-shadow: 0px 15px 15px rgba(0,0,0,0.18);
+        transition: all 0.3s ease;
+    }
+ 
+    #menu-btn:checked ~ .nav-links {
+        left: 0%;
+    }
+
+    #menu-btn:checked ~ .btn.menu-btn {
+        display: none;
+    }
+
+    #close-btn:checked ~ .btn.menu-btn {
+        display: block;
+    }
+
+    .nav-links li {
+        margin: 15px 10px;
+    }
+
+        .nav-links li a {
+            padding: 0 20px;
+            display: block;
+            font-size: 20px;
+        }
+}
+
 
 .container-body {
     width: fit-content;
@@ -39,12 +174,9 @@ body {
     align-items: center;
 }
 
-.container-header-logo-name, .container-header-phone {
+.container-header-phone {
     font-size: 20px;
     line-height: 24px;
-}
-.container-header-logo-name {
-    margin:0;
 }
 
 .container-header-phone > span {
@@ -77,15 +209,16 @@ body {
 .container-logo-slogan {
     display: flex;
     flex-direction: column;
-    font-size: 1.65vw;
-    line-height: 1.66vw;
-    width: 45%;
+    font-size: 2.5vw;
+    line-height: 2.5vw;
+    width: 80%;
     max-width: 805px;
-    padding-right: 6vw;
+    margin-left: -20%;
+    /* padding-right: 6vw;*/
 }
 
     .container-logo-slogan :first-child {
-        margin-left: 17%;
+        margin-left: 20%;
     }
 
     .container-logo-slogan :last-child {
@@ -97,7 +230,7 @@ body {
     font-size: 10vw;
     line-height: 10vw; /*5.5vw;*/
     color: var(--clr-primary-orange);
-    font-weight:400;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -143,8 +276,8 @@ body {
     margin: 0 auto;
     font-family: 'Rimma';
     font-weight: 500;
-    font-size: 2.60417vw;
-    line-height: 2.60417vw;
+    font-size: 4vw;
+    line-height: 4vw;
 }
 
 .container-title-shape {
@@ -357,11 +490,20 @@ body {
             font-weight: 600;
         }
 
+@media screen and (min-width: 1200px) {
+    .container-logo-slogan {
+        font-size: 30px;
+        line-height: 31px;
+    }
+
+    
+}
+
 @media screen and (min-width: 1920px) {
     .container-logo-slogan {
-        font-size: 32px;
-        line-height: 34px;
-        padding-right: 115px;
+        font-size: 34px;
+        line-height: 35px;
+        padding-right: 80px;
     }
 
     .container-logo-name {
@@ -384,8 +526,8 @@ body {
 
 
     .container-title {
-        font-size: 50px;
-        line-height: 50px;
+        font-size: 75px;
+        line-height: 75px;
     }
 
     .container-why-choose-us-cards > .card {
@@ -417,14 +559,14 @@ body {
 }*/
 
 @media screen and (min-width: 391px) and (max-width: 768px) {
-    .container-header-logo-name, .container-header-phone {
+    .container-header-phone {
         font-size: 18px;
         line-height: 22px;
     }
 }
 
 @media screen and (max-width: 390px) {
-    .container-header-logo-name, .container-header-phone {
+    .container-header-phone {
         font-size: 18px;
         line-height: 22px;
     }
