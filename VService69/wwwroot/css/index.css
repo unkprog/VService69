@@ -168,6 +168,12 @@ nav {
     width: 100%;
 }
 
+.container-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .container-row-center {
     display: flex;
     flex-direction: column;
@@ -232,6 +238,7 @@ nav {
     color: var(--clr-primary-orange);
     font-weight: 400;
     margin: 0;
+    text-align: center;
 }
 
 .container-header-logo-item {
@@ -278,6 +285,7 @@ nav {
     font-weight: 500;
     font-size: 4vw;
     line-height: 4vw;
+    text-align: center;
 }
 
 .container-title-shape {
@@ -291,7 +299,7 @@ nav {
     text-align: center;
 }
 
-.container-why-choose-us-cards {
+/*.container-why-choose-us-cards {
     display: flex;
     width: 100%;
     height: 33.3346vw;
@@ -321,7 +329,7 @@ nav {
             font-family: 'Inter';
             font-weight: 600;
             color: rgba(233, 240, 248, 0.3);
-        }
+        }*/
 
 .container-icons {
     display: flex;
@@ -332,7 +340,8 @@ nav {
     .container-icons > .container-icon {
         display: flex;
         flex-direction: column;
-        width: 15.077vw;
+        width: 16vw;
+        max-width: 16vw;
         align-items: center;
         padding: 3.2vw 0.8vw;
     }
@@ -360,6 +369,82 @@ nav {
             color: rgba(233, 240, 248, 0.3);
         }
 
+
+        .container-icons > .container-icon > .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 16vw;
+            height: 16vw;
+            max-width: 16vw;
+            background-color: rgba(233, 240, 248, 0.1);
+            max-height: 320px;
+            font-family: 'Rimma';
+            font-weight: 500;
+            font-size: 1.17vw;
+            line-height: 1.17vw;
+            padding: 0.8vw;
+        }
+
+            .container-icons > .container-icon > .card.odd {
+                margin-top: 2vw;
+            }
+            .container-icons > .container-icon > .card.even {
+                margin-top: 18vw;
+            }
+
+
+            .container-icons > .container-icon > .card > h4.primary {
+                margin: 0;
+                font-family: Inter;
+                font-size: 1.6vw;
+                line-height: 1.6vw;
+            }
+
+            .container-icons > .container-icon > .card > span.secondary {
+                font-family: 'Inter';
+                font-weight: 600;
+                color: rgba(233, 240, 248, 0.3);
+            }
+
+@media screen and (max-width: 768px) {
+
+    div.container-column.icons {
+        width: fit-content;
+        align-self: center;
+    }
+
+    .container-icons {
+        flex-direction: column;
+        margin-top: 2vw;
+    }
+
+        .container-icons > .container-icon {
+            flex-direction: row;
+            max-width: none;
+            width: 100%;
+            padding: 0.8vw 3.2vw;
+        }
+
+            .container-icons > .container-icon > .icon-num {
+                margin-top: 0;
+                width: 3em;
+                text-align: center;
+            }
+
+            .container-icons > .container-icon > .card {
+                width: 32vw;
+                height: 9vw;
+                max-width: 32vw;
+            }
+
+                .container-icons > .container-icon > .card.odd {
+                    margin-top: 0;
+                }
+                .container-icons > .container-icon > .card.even {
+                    margin-top: 0;
+                }
+}
 
 .container-services {
     width: 100%;
@@ -405,6 +490,20 @@ nav {
             margin-right: 1.5vw;
         }
 
+@media screen and (max-width: 768px) {
+    .container-services-row > span, .container-services-row > h3 {
+        font-size: 2.7vw;
+        line-height: 2.7vw;
+    }
+
+    container-services-row > span.number {
+        width: 5vw;
+    }
+
+    .container-services-row > span.price {
+        font-size: 2vw;
+    }
+}
 
 .button-contact-us {
     margin: 0 auto;
@@ -420,6 +519,11 @@ nav {
     width: 64vw;
     max-width: 760px;
     height: 800px;
+}
+@media screen and (max-width: 500px) {
+    .yandex-reviews {
+        width: unset;
+    }
 }
 
 .container-about-cards {
@@ -447,6 +551,11 @@ nav {
         border: 1px solid #E9F0F81A;
         border-right: none;
     }
+
+        .container-about-cards > .card.last {
+            border: 1px solid #E9F0F81A;
+        }
+
         .container-about-cards > .card > h4.primary {
             margin: 0;
             font-weight: 400;
@@ -457,6 +566,28 @@ nav {
             font-weight: 600;
             color: rgba(233, 240, 248, 0.3);
         }
+
+
+
+@media screen and (max-width: 768px) {
+    .container-about-cards {
+        flex-direction: column;
+        width: 100%;
+        height: unset;
+        max-height: unset;
+        margin: 3vw auto 0 auto;
+        align-items: center;
+    }
+
+        .container-about-cards > .card {
+            font-size: 2vw;
+            line-height: 3vw;
+            width: 80%;
+            border-right: 1px solid #E9F0F81A;
+            border-bottom: none;
+        }
+
+}
 
 .about-item {
     font-weight: 400;
@@ -490,13 +621,34 @@ nav {
             font-weight: 600;
         }
 
+        .container-contacts-cards > .card.nav-footer {
+            width: 30%;
+        }
+
+@media screen and (max-width: 768px) {
+    .container-contacts-cards.contact-cards {
+        flex-direction: column;
+    }
+
+    .container-contacts-cards > .card {
+        font-size: 1.35vw;
+        line-height: 1.35vw;
+    }
+
+    .container-contacts-cards.contact-cards > span.secondary > a > span {
+        font-size: 1.75vw;
+    }
+
+    .container-contacts-cards > .card.nav-footer {
+        width: 50%;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .container-logo-slogan {
         font-size: 30px;
         line-height: 31px;
     }
-
-    
 }
 
 @media screen and (min-width: 1920px) {
