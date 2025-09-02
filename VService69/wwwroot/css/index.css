@@ -362,7 +362,7 @@ nav {
             }
 
         .container-icons > .container-icon > .icon-num {
-            font-size: 2.25vw;
+            font-size: 3vw;
             margin-top: 2vw;
             font-family: 'Rimma';
             font-weight: 500;
@@ -426,16 +426,25 @@ nav {
             padding: 0.8vw 3.2vw;
         }
 
+            .container-icons > .container-icon > .icon {
+                width: 13vw;
+                height: 13vw;
+            }
+
             .container-icons > .container-icon > .icon-num {
                 margin-top: 0;
                 width: 3em;
                 text-align: center;
+                font-size: 5vw;
             }
 
             .container-icons > .container-icon > .card {
-                width: 32vw;
-                height: 9vw;
-                max-width: 32vw;
+                width: 50vw;
+                height: 15vw;
+                max-width: 50vw;
+                padding: 1vw;
+                font-size: 2vw;
+                line-height: 2vw;
             }
 
                 .container-icons > .container-icon > .card.odd {
@@ -443,6 +452,11 @@ nav {
                 }
                 .container-icons > .container-icon > .card.even {
                     margin-top: 0;
+                }
+
+                .container-icons > .container-icon > .card > h4.primary {
+                    font-size: 3vw;
+                    line-height: 3vw;
                 }
 }
 
@@ -532,13 +546,14 @@ nav {
     height: 10vw;
     max-height: 180px;
     margin: 3vw auto 0 auto;
+
 }
 
     .container-about-cards > .card {
         display: flex;
         flex-direction: column;
         gap: 1vw;
-        /*justify-content: space-between;*/
+        justify-content: space-around;
         width: 90%;
         /*height: 15.077vw;*/
         background-color: rgba(233, 240, 248, 0.1);
@@ -577,16 +592,47 @@ nav {
         max-height: unset;
         margin: 3vw auto 0 auto;
         align-items: center;
+
     }
 
         .container-about-cards > .card {
-            font-size: 2vw;
+            font-size: 3vw;
             line-height: 3vw;
             width: 80%;
             border-right: 1px solid #E9F0F81A;
             border-bottom: none;
+            padding: 1vw;
+            height: 15vw;
         }
 
+            .container-about-cards > .card > h4.primary {
+                font-size: 3vw;
+                line-height: 3vw;
+            }
+}
+.about-text-empty {
+    width:50%;
+}
+
+.about-text {
+    width: 50%;
+    font-size: 1.93vw;
+    font-family: 'Rimma';
+    text-align: center;
+}
+
+.about-primary-text {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 1.29vw;
+}
+
+.about-seconary-text {
+    color: #E9F0F84D;
+    font-size: 1vw;
+    line-height: 1vw;
+    margin-top: 1vw
 }
 
 .about-item {
@@ -595,6 +641,35 @@ nav {
     line-height: 1.5vw;
     margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+    .about-text-empty {
+        width: 10%;
+    }
+
+    .about-text {
+        width: 50%;
+        font-size: 2.93vw;
+        font-family: 'Rimma';
+        text-align: center;
+    }
+
+    .about-primary-text {
+        font-size: 2.5vw;
+        line-height: 2.29vw;
+    }
+
+    .about-seconary-text {
+        font-size: 2.2vw;
+        line-height: 2.2vw;
+    }
+
+    .about-item {
+        font-size: 2vw;
+        line-height: 2vw;
+    }
+}
+
 
 .container-contacts-cards {
     display: flex;
@@ -631,8 +706,8 @@ nav {
     }
 
     .container-contacts-cards > .card {
-        font-size: 1.35vw;
-        line-height: 1.35vw;
+        font-size: 1.8vw;
+        line-height: 1.8vw;
     }
 
     .container-contacts-cards.contact-cards > span.secondary > a > span {
@@ -709,6 +784,9 @@ nav {
         font-size: 118px;
     }
 }*/
+.container-header-phone-link {
+    font-size: 1vw;
+}
 
 @media screen and (min-width: 391px) and (max-width: 768px) {
     .container-header-phone {
@@ -721,5 +799,9 @@ nav {
     .container-header-phone {
         font-size: 18px;
         line-height: 22px;
+    }
+
+    .container-header-phone-link {
+        font-size: 10px;
     }
 }

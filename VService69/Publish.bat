@@ -1,0 +1,1 @@
+C:\Work\VS2022\GitHub\VService69\VService69.Util.Publish\bin\Debug\net9.0\VService69.Util.Publish.exe C:\Work\VS2022\GitHub\VService69\VService69\bin\Release\net8.0\publish\wwwroot
