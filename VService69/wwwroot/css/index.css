@@ -66,11 +66,16 @@ body {
 .icon-cancel:before {
     content: '\e801';
 }
-/* '' */
 .icon-menu:before {
     content: '\f0c9';
 }
-/* '' */
+.icon-left-big:before {
+    content: '\e800';
+}
+.icon-right-big:before {
+    content: '\e802';
+}
+
 
 nav {
     position: fixed;
