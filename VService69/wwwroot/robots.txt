@@ -1,0 +1,4 @@
+User-agent: *
+Sitemap: https://xn--69-dlcaobu6dhe.xn--p1ai/sitemap.xml
+Disallow: 
+Host: https://xn--69-dlcaobu6dhe.xn--p1ai
